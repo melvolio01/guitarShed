@@ -1,0 +1,60 @@
+.directory-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home-image {
+    position: relative;
+    height: 60vh;
+    background-color: #242943;
+    color: #fff;
+    overflow: hidden;
+
+    .hero-header-text {
+        position: absolute;
+        top: 20vh;
+        left: 5vw;
+        z-index: 2;
+
+        h1 {
+            font-weight: 300;
+            font-family: Helvetica;
+            letter-spacing: 1px;
+            font-size: 40px;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+        }
+
+        h4 {
+            font-weight: 200;
+            margin-bottom: 40px;
+        }
+
+        Button {
+            background-color: #242943;
+            border: 1px solid #fff;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        Button:hover {
+            background-color: #fff;
+
+            a {
+                color: #242943;
+            }
+        }
+    }
+
+    img {
+        object-fit: cover;
+        opacity: 0.04;
+        overflow: hidden;
+        width: 100vw;
+    }
+}

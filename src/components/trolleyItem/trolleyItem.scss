@@ -1,0 +1,33 @@
+.trolley-item {
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    min-height: 50px;
+    margin: 10px;
+    padding: 2px;
+    border: 1px solid #F1F2EB;
+    font-size: 14px;
+
+    .item-image {
+        height: 50px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        img {
+            margin: 2px;
+            min-height: 40px;
+            min-width: 40px;
+            max-height: 50px;
+            max-width: 50px;
+            border: 0;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .item-name {
+        width: 80px;
+        margin: 2px;
+    }
+}
