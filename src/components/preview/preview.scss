@@ -1,9 +1,14 @@
+.collection-preview {
+    margin-top: 24px;
+}
+
 .preview {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
     flex-wrap: wrap;
+    margin: 8px;
 }
 
 .outer-chuck-div {
@@ -13,11 +18,24 @@
 }
 
 .inner-chuck-div {
+    margin: 8px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: flex-start;
     width: 100vw;
 }
+
+@media (min-width: 599px) { 
+    .inner-chuck-div {
+        flex-direction: row;
+    }
+ }
+
+ @media (max-width: 1200px) {
+     .inner-chuck-div {
+        flex-wrap: wrap;
+     }
+ }
 
 a {
     text-decoration: none;

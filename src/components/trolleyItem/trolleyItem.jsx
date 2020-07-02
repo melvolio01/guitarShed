@@ -10,7 +10,7 @@ const TrolleyItem = ({ item, quantity }) => {
 
             </div>
             <span className="item-name">{name}</span>
-            {quantity} x £{price}.00
+            <span className="item-cost">{quantity} x £{price}.00</span>
         </div>
     );
 };

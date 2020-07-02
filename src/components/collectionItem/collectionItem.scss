@@ -1,10 +1,12 @@
 .collection-item {
-    width: 22%;
+    width: 100%;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #F1F2EB;
+    margin: 8px;
+    padding: 8px;
 
     button {
         margin: 5px;
@@ -17,7 +19,23 @@
             visibility: visible;
         }
     }
+
+    p {
+        margin: 8px;
+    }
 }
+
+@media (min-width: 800px) { 
+    .collection-item {
+        width: 45%;
+    }
+ }
+
+ @media (min-width: 1200px) {
+     .collection-item {
+       width: 22%;
+     }
+ }
 
 .item-image {
     height: 250px;

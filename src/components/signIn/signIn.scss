@@ -1,11 +1,17 @@
 .sign-in {
     margin-top: 100px;
-    width: 30vw;
+    width: 80vw;
 }
 
 .buttons {
-    width: 30vw;
     display: flex;
+    flex-wrap: wrap;
+    min-width: 440px;
     margin-top: 10px;
-    justify-content: space-between;
+    padding: 10px;
+
+    Button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

@@ -9,6 +9,7 @@ import {
 } from '../../redux/trolley/trolley.action';
 import { showModal, hideModal } from '../../redux/modal/modal.action';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Checkout = ({ trolleyItems,
     trolleyTotal,
@@ -19,11 +20,11 @@ const Checkout = ({ trolleyItems,
     removeSingleItemFromTrolley,
     removeAllItemInstancesFromTrolley,
     updateTrolleyTotal }) => {
-    console.log(trolleyTotal)
     updateTrolleyTotal(calculateTotalCost(trolleyItems))
     return (
         < div >
             <h2>Checkout</h2>
+            {trolleyItems.length == 0 && <div className="to-shop"><h4>Nothing here yet</h4><Button><Link to="/shop">Back to shop</Link></Button></div>}
             <div>
                 <div className={modalVisible ? "show-modal" : "hide-modal"}>
                     <div onClick={hideModal}><p id="dismiss">x</p><div id="coming-soon">More stock soon...</div></div>

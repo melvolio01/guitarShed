@@ -1,6 +1,6 @@
 .trolley-dropdown {
     position: absolute;
-    width: 240px;
+    width: 300px;
     height: 340px;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     border: 1px solid gray;
     background-color: #fff;
     color: #242943;
-    top: 80px;
+    top: 70px;
     right: 0;
     z-index: 4;
 
@@ -37,10 +37,9 @@
 }
 
 .trolley-header, .trolley-sub-header {
-    width: 240px;
+    width: 300px;
     height: 50px;
-    margin: 2px;
-    margin-top: 0px;
+    margin: 0 auto;
     background-color: #F1F2EB;
     color: #242943;
     font-size: 16px;
